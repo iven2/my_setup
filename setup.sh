@@ -22,6 +22,7 @@ create_sym_link() {
 # -f is testing file existence
 # -d is testing directory existence
 # -L is testing symbolic link existence
+# see "man test" for detail
     if [ -f ${1} ] || [ -d ${1} ] || [ -L ${1} ]
     then
 	mv ${1} ${old_dir}/${1}.old
