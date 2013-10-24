@@ -44,6 +44,8 @@ create_sym_link .emacs.d
 
 # Install emacs24
 # https://launchpad.net/~cassou/+archive/emacs
+# python-software-properties must be installed because add-apt-repository is provided by it
+sudo apt-get install python-software-properties
 sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
 sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
