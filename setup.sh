@@ -36,6 +36,7 @@ create_sym_link .bashrc
 create_sym_link .bashrc_custom
 create_sym_link .dir_colors
 create_sym_link .emacs.d
+create_sym_link .byobu
 
 # purge old emacs AVOIDING this due to fragile server setup of MicroFuge for now
 # sudo apt-get update
