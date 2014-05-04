@@ -1,5 +1,10 @@
 #!/bin/bash
 
+
+# Update May 4 2014 IMPORANT:
+# You may find your .bashrc is not sourced when you create a new user on ubuntu
+# This is because you have to set the user's default shell to bash!
+
 cd ${HOME}
 
 new_dir=dotfiles
@@ -50,4 +55,3 @@ sudo apt-get install python-software-properties
 sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
 sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
-
