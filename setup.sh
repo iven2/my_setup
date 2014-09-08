@@ -43,16 +43,19 @@ create_sym_link .dir_colors
 create_sym_link .emacs.d
 create_sym_link .byobu
 
-# purge old emacs AVOIDING this due to fragile server setup of MicroFuge for now
+# purge old emacs (AVOIDING this due to fragile server setup of MicroFuge for now)
 # sudo apt-get update
 # sudo apt-get install
 # sudo apt-get purge emacs emacs-snapshot-common emacs-snapshot-bin-common emacs-snapshot emacs-snapshot-el emacs-snapshot-gtk emacs23 emacs23-bin-common emacs23-common emacs23-el emacs23-nox emacs23-lucid auctex apel emacs24 emacs24-bin-common emacs24-common emacs24-common-non-dfsg
 
-# Install emacs24
+# Install emacs (This works for ubuntu version higher than 14.04)
+sudo apt-get -y install emacs24
+
+# Install emacs24 (OLD VERSION: Need this for ubuntu version lower than 14.04)
 # https://launchpad.net/~cassou/+archive/emacs
 # python-software-properties must be installed because add-apt-repository is provided by it
-sudo apt-get install python-software-properties
-sudo apt-get install software-properties-common
-sudo add-apt-repository -y ppa:cassou/emacs
-sudo apt-get -qq update
-sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
+# sudo apt-get install python-software-properties
+# sudo apt-get install software-properties-common
+# sudo add-apt-repository -y ppa:cassou/emacs
+# sudo apt-get -qq update
+# sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
