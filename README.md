@@ -1,2 +1,2 @@
-xcui_setup
+my_setup
 ==========
