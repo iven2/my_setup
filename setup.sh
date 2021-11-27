@@ -16,7 +16,7 @@ else
     mkdir ${old_dir}
 fi
 
-git clone https://github.com/cuixu66/dotfiles
+git clone https://github.com/iven2/dotfiles
 
 create_sym_link() {
 # ln -sb original_file sym_link
